@@ -22,8 +22,8 @@ function Nav() {
           </a>
         </li>
         <li>
-          <a data-testid="portfolio" href="#portfolio">
-            Portfolio
+          <a data-testid="project" href="#project">
+            Project
           </a>
         </li>
         <li>
