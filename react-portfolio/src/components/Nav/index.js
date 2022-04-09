@@ -5,19 +5,31 @@ function Nav() {
   return (
     <header>
     <h2>
-      <a href="/">
-        <span role="img" aria-label="camera"> 📸</span> Miriams Portfolio
+      <a  data-test-id="link" href="/">
+        <span role="img" aria-label="camera"></span> Miriams Portfolio
       </a>
     </h2>
     <nav>
       <ul className="flex-row">
         <li className="mx-2">
-          <a href="#about">
+          <a data-testid="about" href="#about">
             About me
           </a>
         </li>
         <li>
-          <span>Contact</span>
+          <a data-testid="contact" href="#contact" >
+            Contact
+          </a>
+        </li>
+        <li>
+          <a data-testid="portfolio" href="#portfolio">
+            Portfolio
+          </a>
+        </li>
+        <li>
+          <a data-testid="resume" href="#resume">
+            Resume
+            </a>
         </li>
       </ul>
     </nav>
