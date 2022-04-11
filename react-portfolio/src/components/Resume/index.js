@@ -2,6 +2,7 @@ import React from 'react';
 
 function Resume() {
     return (
+    <section>
     <div className="Resume">
           <h2>Resume</h2>
           <p>
@@ -9,6 +10,7 @@ function Resume() {
           </p>
           <p><a href="https://www.linkedin.com/in/miriam-santana-126aa6105/">LinkedIn Resume</a></p>
     </div>
+    </section>
     );
 }
 

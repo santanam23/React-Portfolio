@@ -12,6 +12,11 @@ function Nav() {
     </h2>
     <nav>
       <ul className="flex-row">
+      <li className="mx-2">
+          <a data-testid="home" href="/home">
+            Home
+          </a>
+        </li>
         <li className="mx-2">
           <a data-testid="about" href="/about">
             About me
