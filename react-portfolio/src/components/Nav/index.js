@@ -5,8 +5,9 @@ function Nav() {
   return (
     <header>
     <h2>
-      <a  data-test-id="link" href="/">
-        <span role="img" aria-label="camera"></span> Miriams Portfolio
+      <a  data-testid="link" href="/">
+        {/* <span role="img" aria-label="camera"></span>  */}
+        Miriams Portfolio
       </a>
     </h2>
     <nav>
@@ -16,17 +17,17 @@ function Nav() {
             About me
           </a>
         </li>
-        <li>
+        <li className="mx-2">
           <a data-testid="contact" href="#contact" >
             Contact
           </a>
         </li>
-        <li>
+        <li className="mx-2">
           <a data-testid="project" href="#project">
             Project
           </a>
         </li>
-        <li>
+        <li className="mx-2">
           <a data-testid="resume" href="#resume">
             Resume
             </a>

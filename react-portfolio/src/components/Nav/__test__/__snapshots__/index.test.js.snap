@@ -5,15 +5,10 @@ exports[`Nav component matches snapshot 1`] = `
   <header>
     <h2>
       <a
+        data-testid="link"
         href="/"
       >
-        <span
-          aria-label="camera"
-          role="img"
-        >
-           📸
-        </span>
-         Miriams Portfolio
+        Miriams Portfolio
       </a>
     </h2>
     <nav>
@@ -24,15 +19,41 @@ exports[`Nav component matches snapshot 1`] = `
           class="mx-2"
         >
           <a
+            data-testid="about"
             href="#about"
           >
             About me
           </a>
         </li>
-        <li>
-          <span>
+        <li
+          class="mx-2"
+        >
+          <a
+            data-testid="contact"
+            href="#contact"
+          >
             Contact
-          </span>
+          </a>
+        </li>
+        <li
+          class="mx-2"
+        >
+          <a
+            data-testid="project"
+            href="#project"
+          >
+            Project
+          </a>
+        </li>
+        <li
+          class="mx-2"
+        >
+          <a
+            data-testid="resume"
+            href="#resume"
+          >
+            Resume
+          </a>
         </li>
       </ul>
     </nav>

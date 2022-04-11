@@ -10,6 +10,13 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     >
       Who am I?
     </h1>
+    <div
+      class="my-2"
+    >
+      <p>
+        This will be the about me section.
+      </p>
+    </div>
   </section>
 </DocumentFragment>
 `;

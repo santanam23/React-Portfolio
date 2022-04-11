@@ -6,7 +6,7 @@ exports[`Footer component matches snapshot DOM node structure 1`] = `
     class="footer"
   >
     <h2>
-      Made with ❤️️ by Miriam Santana
+      Made with love by Miriam Santana
     </h2>
     <p>
       © 2021 Miriam Santana's Wed Development Inc.

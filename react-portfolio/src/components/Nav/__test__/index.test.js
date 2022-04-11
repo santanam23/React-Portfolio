@@ -19,8 +19,11 @@ describe('Nav component', () => {
     describe('links are visible', () => {
         it('inserts text into the links', () => {
           const { getByTestId } = render(<Nav />);
-          expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
+          expect(getByTestId('link')).toHaveTextContent('Miriams Portfolio');
           expect(getByTestId('about')).toHaveTextContent('About me');
+          expect(getByTestId('contact')).toHaveTextContent('Contact');
+          expect(getByTestId('project')).toHaveTextContent('Project');
+          expect(getByTestId('resume')).toHaveTextContent('Resume');
         });
       });
       
