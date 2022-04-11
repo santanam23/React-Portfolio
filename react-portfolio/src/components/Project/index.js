@@ -2,9 +2,9 @@ import React from 'react';
 
 function Project() {
     return (
-        <div>
+        <section className="mx-5">
             
-        </div>
+        </section>
     )
 }
 export default Project;
