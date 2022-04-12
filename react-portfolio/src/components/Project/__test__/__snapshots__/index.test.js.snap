@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <section
+    class="mx-5"
+    id="project"
+  >
+    <h2>
+      Projects
+    </h2>
+    <div
+      class="gallery"
+    >
+      <a
+        href="foodFest.pgn"
+        target="_blank"
+      >
+        <img
+          alt="Food Festival"
+          height="400"
+          src="foodFest.png"
+          width="600"
+        />
+      </a>
+      <div
+        class="desc"
+      >
+        This is a link to my Food Fest PWA
+      </div>
+    </div>
+    <div
+      class="gallery"
+    >
+      <a
+        href="notetaker.pgn"
+        target="_blank"
+      >
+        <img
+          alt="Notetaker"
+          height="400"
+          src="notetaker.png"
+          width="600"
+        />
+      </a>
+      <div
+        class="desc"
+      >
+        This is a link to Notetaker app
+      </div>
+    </div>
+    <div
+      class="gallery"
+    >
+      <a
+        href="passwordGen.png"
+        target="_blank"
+      >
+        <img
+          alt="Password Generator"
+          height="400"
+          src="passwordGen.png"
+          width="600"
+        />
+      </a>
+      <div
+        class="desc"
+      >
+        This is a link to Password Generator website
+      </div>
+    </div>
+    <div
+      class="gallery"
+    >
+      <a
+        href="weatherDash.png"
+        target="_blank"
+      >
+        <img
+          alt="Weather Dashboard"
+          height="400"
+          src="weatherDash.png"
+          width="600"
+        />
+      </a>
+      <div
+        class="desc"
+      >
+        This is a link to the Weather Dashboard
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

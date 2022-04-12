@@ -5,6 +5,7 @@ exports[`Resume component renders 1`] = `
   <section>
     <div
       class="Resume"
+      id="resume"
     >
       <h2>
         Resume
