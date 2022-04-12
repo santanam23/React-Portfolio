@@ -3,7 +3,7 @@ import React from 'react';
 function Resume() {
     return (
     <section>
-    <div className="Resume">
+    <div className="Resume" id="resume">
           <h2>Resume</h2>
           <p>
             My resume will be shared as a link to my LinkedIn acccount.

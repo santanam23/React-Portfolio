@@ -2,7 +2,9 @@
 
 exports[`Nav component matches snapshot 1`] = `
 <DocumentFragment>
-  <header>
+  <header
+    class="navbar"
+  >
     <h2>
       <a
         data-testid="link"
@@ -19,8 +21,18 @@ exports[`Nav component matches snapshot 1`] = `
           class="mx-2"
         >
           <a
+            data-testid="home"
+            href="/home"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="mx-2"
+        >
+          <a
             data-testid="about"
-            href="#about"
+            href="/about"
           >
             About me
           </a>
@@ -30,7 +42,7 @@ exports[`Nav component matches snapshot 1`] = `
         >
           <a
             data-testid="contact"
-            href="#contact"
+            href="/contact"
           >
             Contact
           </a>
@@ -40,7 +52,7 @@ exports[`Nav component matches snapshot 1`] = `
         >
           <a
             data-testid="project"
-            href="#project"
+            href="/project"
           >
             Project
           </a>
@@ -50,7 +62,7 @@ exports[`Nav component matches snapshot 1`] = `
         >
           <a
             data-testid="resume"
-            href="#resume"
+            href="/resume"
           >
             Resume
           </a>

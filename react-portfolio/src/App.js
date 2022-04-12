@@ -11,8 +11,8 @@ import './App.css';
 function App() {
   return (
     <div>
+      <Nav/>
       <main>
-        <Nav/>
         <Home />
         <About/>
         <ContactForm />

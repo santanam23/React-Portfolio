@@ -10,4 +10,9 @@ describe('Project component', () => {
     it('renders', () => {
       render(<Project />);
     })
+    it('matches snapshot DOM node structure', () => {
+      // render Project
+      const { asFragment } = render(<Project />);
+      expect(asFragment()).toMatchSnapshot();
+    })
 });

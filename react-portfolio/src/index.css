@@ -13,9 +13,13 @@ code {
 
 
 main {
-	margin: 0 auto;
+	margin-top: 40px;
 	max-width: 90%;
   padding: 50px 30px;
+
+}
+.home {
+  margin-top: 30px;
 }
 :root {
   --primary: #5dd9c1;
@@ -106,32 +110,14 @@ a:hover {
 
 header {
   background: var(--dark);
+  height: fit-content;
+  border: solid 1px;
 }
 
 header a {
   color: var(--light);
 }
 
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 button {
   font-size: 1rem;
@@ -189,6 +175,7 @@ li {
   height: 90px;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 999;
   opacity: 0.9;
   display: flex;
