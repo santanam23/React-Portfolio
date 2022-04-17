@@ -182,11 +182,11 @@ li {
   justify-content: center;
   align-items: center;
 }
-nav a:hover {
+.navbar a:hover {
   text-decoration: none;
 }
 
-nav  li {
+.navbar  li {
   cursor: pointer;
 }
 
@@ -298,4 +298,15 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.home h1 {
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
