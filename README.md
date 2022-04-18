@@ -1,7 +1,7 @@
 # React-Portfolio
   
   ## Description 
-  In this repository, we focus on creating a react-app style website. We are creating a react portfolio style single page format. We are using components and NavTabs to organize the code. We are also decompressing the information by using npm build.
+  In this repository, we focus on creating a react-app style website. We are creating a react portfolio style single page format. We are using components and NavTabs to organize the code. We are also decompressing the information by using npm build. Link to website [https://santanam23.github.io/]React-Portfolio/
   ## Table of Contents
   * [Installation](#installation)
 
@@ -16,7 +16,7 @@
   * [Questions](#questions)
   
   ## Installation 
-  npm i react-app 
+  npm i react-app
 
   ## Usage 
   make sure to checkout my src to see the exact style format I chose.
