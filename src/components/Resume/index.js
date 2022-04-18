@@ -1,14 +1,19 @@
 import React from 'react';
 
 function Resume() {
+  const first = ['HTML', 'CSS', 'Javascript', 'responsive design', 'react']
+  const firstList = first.map(first => <ul>{first}</ul>)
+  const second = ['APIs', 'Node', 'Express', 'MySQL, Sequeulze', 'MongoDB', 'Rest']
+  const secondList = second.map(second => <ul>{second}</ul>)
     return (
     <section>
-    <div className="Resume" id="resume">
-          <h2>Resume</h2>
-          <p>
-            My resume will be shared as a link to my LinkedIn acccount.
-          </p>
-          <p><a href="https://www.linkedin.com/in/miriam-santana-126aa6105/">LinkedIn Resume</a></p>
+    <div>
+      <h1 className="Resume" id="resume">Front-End Proficiency</h1>
+    {firstList}
+    </div>
+    <div>
+      <h1 className="Resume" id="resume">Back-End Proficiency</h1>
+    {secondList}
     </div>
     </section>
     );
