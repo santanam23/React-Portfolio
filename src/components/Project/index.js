@@ -3,6 +3,7 @@ import foodFest from '../../assets/images/foodFest.png';
 import notetaker from '../../assets/images/notetaker.png';
 import passwordGen from '../../assets/images/passwordGen.png';
 import weatherDash from '../../assets/images/weatherDash.png';
+import houstonVolleyballSocial from '../../assets/images/houstonVolleyballSocial.png';
 
 function Project() {
     return (
@@ -36,6 +37,12 @@ function Project() {
             <div className="desc">This is a link to the Weather Dashboard</div>
             </div>
 
+            <div className="gallery">
+            <a target="_blank" rel="noopener noreferrer" href="https://secret-beyond-82045.herokuapp.com/">
+                <img src={houstonVolleyballSocial} alt="Houston Volleyball Social" width="600" height="400" /> 
+            </a>
+            <div className="desc">This is a link to my Project</div>
+            </div>
     </section>
     )
 }
