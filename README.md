@@ -33,5 +33,4 @@
   ## Questions
   If you have any questions about this projects, please contact me directly at miriam.steph.santana@gmail.com. You can view more of my projects at https://github.com/santanam23.
   
-
-<img width="660" alt="Screen Shot 2022-04-17 at 7 24 31 PM" src="https://user-images.githubusercontent.com/94243898/163737799-6ec42e3e-53b8-416d-a066-8f09808ca17a.png">
+<img width="1342" alt="Screen Shot 2022-05-13 at 12 07 50 PM" src="https://user-images.githubusercontent.com/94243898/168333853-17d4f17d-7f34-4065-a190-325fa231df65.png">

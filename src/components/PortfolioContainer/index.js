@@ -4,7 +4,7 @@ import Home from "../Home";
 import About from "../About";
 import Contact from "../Contact";
 import Project from "../Project";
-import Resume from "../Resume";
+import TechSkills from "../TechSkills";
 
 export default function PortfolioContainer() {
 
@@ -39,7 +39,7 @@ export default function PortfolioContainer() {
           <Project />
         </div>
         <div id="skillsSection" style={{marginTop:"50px"}}>
-          <Resume />
+          <TechSkills />
         </div>
         <div id="aboutSection">
           <About />
