@@ -1,17 +1,17 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Resume from '..';
+import TechSkills from '..';
 
 afterEach(cleanup)
 
-describe('Resume component', () => {
+describe('TechSkills component', () => {
     // First Test
     it('renders', () => {
-      render(<Resume />);
+      render(<TechSkills />);
     });
     it('renders', () => {
-      const { asFragment } = render(<Resume />)
+      const { asFragment } = render(<TechSkills />)
       expect(asFragment()).toMatchSnapshot()
     })
 

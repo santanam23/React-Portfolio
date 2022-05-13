@@ -24,7 +24,7 @@ export default function ProjectCard({name,description,image}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
+        <Button size="small">Link</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>

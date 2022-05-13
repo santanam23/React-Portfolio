@@ -3,7 +3,6 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import myImage from "../../assets/images/coverImage.jpeg";
 import { Typography } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -35,7 +34,7 @@ function Home() {
           <Grid item xs={12} sm={4} container justifyContent={"center"}>
             <img
               src={
-                "https://writestylesonline.com/wp-content/uploads/2019/01/What-To-Wear-For-Your-Professional-Profile-Picture-or-Headshot.jpg"
+                "https://scontent.fhou1-2.fna.fbcdn.net/v/t1.6435-9/71262373_10211568710532556_3625974823378747392_n.jpg?stp=dst-jpg_s552x414&_nc_cat=103&ccb=1-6&_nc_sid=da31f3&_nc_ohc=hF7PYl0ZV9QAX-F36xi&_nc_ht=scontent.fhou1-2.fna&oh=00_AT8RHq0kRhHdkqMQcxJgt2ZrsskBtoBALPu_akoQviq5_A&oe=62A2A69F"
               }
               style={{ borderRadius: "20px", width: "80%" }}
               alt="Miriam Santana"
@@ -45,10 +44,6 @@ function Home() {
           </Grid>
         </Grid>
       </Box>
-      {/* <h1>Welcome To Miriam's Portfolio!</h1>
-        <p>
-         I am so excited you have come across my homepage. I have created this react style website for you to read a little about me. Although the react app site needs a little bit more design, I hope you like what you see so far. Feel free to reach out to me if you have any questions or corners.
-        </p> */}
     </div>
   );
 }

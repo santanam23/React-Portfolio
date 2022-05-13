@@ -1,7 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import Avatar from "@mui/material/Avatar";
-import Chip from "@mui/material/Chip";
+// import Avatar from "@mui/material/Avatar";
+// import Chip from "@mui/material/Chip";
 import SectionTitle from "../common/SectionTitle";
 import SkillList from "./SkillList";
 
@@ -68,18 +68,7 @@ const skills = [
   },
 ];
 
-function Resume() {
-  const first = ["HTML", "CSS", "Javascript", "responsive design", "react"];
-  const firstList = first.map((first) => <ul>{first}</ul>);
-  const second = [
-    "APIs",
-    "Node",
-    "Express",
-    "MySQL, Sequeulze",
-    "MongoDB",
-    "Rest",
-  ];
-  const secondList = second.map((second) => <ul>{second}</ul>);
+function TechSkills() {
   return (
     <section>
       <SectionTitle
@@ -101,17 +90,8 @@ function Resume() {
           );
         })}
       </Grid>
-
-      {/* <div>
-      <h1 className="Resume" id="resume">Front-End Proficiency</h1>
-    {firstList}
-    </div>
-    <div>
-      <h1 className="Resume" id="resume">Back-End Proficiency</h1>
-    {secondList}
-    </div> */}
     </section>
   );
 }
 
-export default Resume;
+export default TechSkills;

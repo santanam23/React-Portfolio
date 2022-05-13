@@ -3,8 +3,8 @@ import React from "react";
 import coverImage from "../../assets/images/coverImage.jpeg";
 function About() {
   return (
-    <div className="my-5" id="about">
-      <h1>Who am I?</h1>
+    <div id="about">
+      <h1>About Me</h1>
 
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
