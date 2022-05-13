@@ -22,11 +22,11 @@ main {
   margin-top: 30px;
 }
 :root {
-  --primary: #5dd9c1;
-  --secondary: #acfcd9;
-  --light: #b084cc;
-  --dark: #665687;
-  --darker: #190933;
+  --primary: #37a987;
+  --secondary: #74aa99;
+  --light: #b7b1d2;
+  --dark: #4b3d8f;
+  --darker: #302664;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
