@@ -1,9 +1,29 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header>
-      <div className="navbar">
+      
+      <Navbar style={{background:'teal', color:'white'}} expand="lg">
+  <Container>
+    <Navbar.Brand href="#home">Miriam-Portfolio</Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
+      <Nav className="me-auto">
+        <Nav.Link href="#homeSection">Home</Nav.Link>
+        <Nav.Link href="#projectSection">Projects</Nav.Link>
+        <Nav.Link href="#skillsSection">Skills</Nav.Link>
+        <Nav.Link href="#aboutSection">About</Nav.Link>
+        <Nav.Link href="#contactSection">Contact</Nav.Link>
+      </Nav>
+    </Navbar.Collapse>
+  </Container>
+</Navbar>
+      
+      
+      {/* <div className="navbar">
         <h2>
           <a data-testid="link" href="/">
             Miriams Portfolio
@@ -68,7 +88,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             </li>
           </ul>
         </nav>
-      </div>
+      </div> */}
     </header>
   );
 }
