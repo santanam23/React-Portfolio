@@ -1,52 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-import { validateEmail } from "../../utils/helpers";
+// import { validateEmail } from "../../utils/helpers";
 import SectionTitle from "../common/SectionTitle";
 import { Button } from "@mui/material";
 
 function ContactForm() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [errorMessage, setErrorMessage] = useState("");
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log("Submit Form", formState);
-    }
-  };
-
-  const handleChange = (e) => {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage("");
-      }
-    }
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log("Handle Form", formState);
-    }
-  };
-
+  const [state, handleSubmit] = useForm("xayvvkkg");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <section id="contact">
-      <SectionTitle title="Contact Me" description={"I will always be happy to meet new people"} />
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <SectionTitle
+        title="Contact Me"
+        description={"I will always be happy to meet new people"}
+      />
+      <form onSubmit={handleSubmit} id="contact-form">
         <Box
           component="form"
           sx={{
@@ -56,39 +27,51 @@ function ContactForm() {
           autoComplete="off"
         >
           <div>
-            <TextField
-              error={false}
-              id="name"
-              label="Name"
-              defaultValue={name}
-              onBlur={handleChange}
-              //  helperText="Incorrect entry."
-            />
-            <TextField
-              error={false}
-              id="email"
-              label="Email"
-              defaultValue={email}
-              onBlur={handleChange}
-              //  helperText="Incorrect entry."
-            />
-            <div style={{ width: "100%"  }}>
+            <div>
+              <TextField
+                error={false}
+                id="email"
+                type="email"
+                name="email"
+                label="Email"
+                //  helperText="Incorrect entry."
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+
+            <div style={{ width: "100%" }}>
               <TextField
                 error={false}
                 fullWidth
+                name="message"
+                type="message"
                 id="message"
                 label="Message"
-                defaultValue={message}
                 maxRows={10}
                 rows={6}
                 multiline
-                onBlur={handleChange}
                 //  helperText="Incorrect entry."
               />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            <div style={{marginLeft:'10px'}}>
-
-            <Button variant="contained"> Submit</Button>
+            <div style={{ marginLeft: "10px" }}>
+              <Button
+                variant="contained"
+                type="submit"
+                value="Send"
+                disable={state.submitting}
+              >
+                {" "}
+                Submit
+              </Button>
             </div>
           </div>
         </Box>
